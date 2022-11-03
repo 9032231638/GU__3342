@@ -9,7 +9,7 @@
 Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number % 2 == 0)
+if (number % 2 == 2)
 {
     Console.WriteLine("Число " + number + " является НЕЧЁТНЫМ");
 }
