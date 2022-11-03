@@ -20,7 +20,7 @@ if (number2 > max)
     max = number2;
 }
 
- if (number3 > max)
+if (number3 > max)
  {
     max = number3;
  }
