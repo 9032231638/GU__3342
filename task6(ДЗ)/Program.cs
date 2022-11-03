@@ -15,5 +15,5 @@ if (number % 2 == 1)
 }
 else
 {
-    Console.WriteLine("Число " + num + "является ЧЁТНЫМ");
+    Console.WriteLine("Число " + number + "является ЧЁТНЫМ");
 }
