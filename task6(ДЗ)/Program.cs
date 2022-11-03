@@ -9,11 +9,11 @@
 Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number % 2 == 2)
+if (number % 2 == 0)
 {
-    Console.WriteLine("Число " + number + " является НЕЧЁТНЫМ");
+    Console.WriteLine("Число " + number + " является ЧЁТНЫМ");
 }
 else
 {
-    Console.WriteLine("Число " + number + " является ЧЁТНЫМ");
+    Console.WriteLine("Число " + number + " является НЕЧЁТНЫМ");
 }
