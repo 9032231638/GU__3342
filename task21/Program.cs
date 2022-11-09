@@ -18,5 +18,4 @@ int y2 = Convert.ToUInt32(Console.ReadLine());
 Console.Write("Z2:");
 int z2 = Convert.ToUInt32(Console.ReadLine());
 
-double len = Math.Sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2);
-Console.WriteLine("len");
+
