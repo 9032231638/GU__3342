@@ -9,7 +9,7 @@
 Console.WriteLine("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number >= 10000 && numder <= 99999)
+if (number >= 10000 && number <= 99999)
 {
     int num1 = number / 10000;
     int num2 = number / 1000 % 10;
