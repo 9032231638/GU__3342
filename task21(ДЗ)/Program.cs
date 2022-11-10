@@ -19,10 +19,16 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Z2: ");
 int z2 = Convert.ToInt32(Console.ReadLine());
 
-int A = x2 - x1;
-int B = y2 - y1;
-int C = z2 - z1;
+double Range(int x11, int y11, int z11, int x21, int y21, int z21)
+{
+    int rX = x11 - x21;
+    int rY = y11 - y21;
+    int rZ = z11 - z21;
+    double rAB = Math.Sqrt(rX * rX + rY * rY + rZ * rZ);
+    return rAB;
+}
+double result = Range(x1,y1,z1,x2,y2,z2);
+Console.Write($"A ({x1},{y1},{z1}); B ({x2},{y2},{z2}) -> {Math.Round(result, 2, MidpointRounding.ToZero)}");
 
 
-double len = Math.Sqrt(A * A + B * B + C * C);
-Console.WriteLine("Расстояние между А и В " + len + "");
+
