@@ -3,31 +3,32 @@
 
 Console.WriteLine("Введите размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-Console.WriteLine("Вот наш массив: ");
-PrintArray(numbers);
+int[] num = new int[size];
+CreateArrayRndInt(num);
+Console.WriteLine("Заданный массив: ");
+PrintArray(num);
 int sum = 0;
 
-for (int z = 0; z < numbers.Length; z+=2)
-    sum = sum + numbers[z];
+for (int x = 1; x < num.Length; x+=2)
+    sum = sum + num[x];
 
-    Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов на нечётных позициях = {sum}");
+    Console.WriteLine($"всего {num.Length} чисел, сумма элементов на нечётных позициях = {sum}");
 
-void FillArrayRandomNumbers(int[] numbers)
+void CreateArrayRndInt(int[] num)
 {
-    for(int i = 0; i < numbers.Length; i++)
+    for(int i = 0; i < num.Length; i++)
         {
-            numbers[i] = new Random().Next(1,10);
+            num[i] = new Random().Next(1,10);
         }
 }
-void PrintArray(int[] numbers)
+void PrintArray(int[] num)
 {
     Console.Write("[ ");
-    for(int i = 0; i < numbers.Length; i++)
+    for(int i = 0; i < num.Length; i++)
         {
-            Console.Write(numbers[i] + " ");
+            Console.Write(num[i] + " ");
         }
     Console.Write("]");
     Console.WriteLine();
 }
+
