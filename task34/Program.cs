@@ -5,7 +5,7 @@ Console.WriteLine("Введите размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] num = new int[size];
 CreateArrayRndNum(num);
-Console.WriteLine("Вот наш массив: ");
+Console.WriteLine("Заданный массив: ");
 PrintArray(num);
 int count = 0;
 
