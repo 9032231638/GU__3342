@@ -18,7 +18,7 @@ void CreateArrayRndInt(int[] num)
 {
     for(int i = 0; i < num.Length; i++)
         {
-            num[i] = new Random().Next(1,10);
+            num[i] = new Random().Next(-30,30);
         }
 }
 void PrintArray(int[] num)
