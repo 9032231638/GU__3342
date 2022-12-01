@@ -12,7 +12,7 @@ int sum = 0;
 for (int x = 1; x < num.Length; x+=2)
     sum = sum + num[x];
 
-    Console.WriteLine($"всего {num.Length} чисел, сумма элементов на нечётных позициях = {sum}");
+    Console.WriteLine($"Ответ = {sum}");
 
 void CreateArrayRndInt(int[] num)
 {
