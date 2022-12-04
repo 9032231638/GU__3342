@@ -1,15 +1,13 @@
-﻿// /Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
-
-Console.Write("Введите числа через запятую: ");
-int[] numbers = StringToNum(Console.ReadLine());
-PrintArray(numbers);
-int sum = 0;
-for (int i = 0; i < numbers.Length; i++)
+﻿Console.Write("Введите элементы(через пробел): ");
+int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int count = 0;
+ 
+for (int i = 0; i < arr.Length; i++)
 {
-    if (numbers[i] > 0)
+    if (arr[i] > 0)
     {
-        sum++;
+        count++;
     }
 }
-Console.WriteLine();
-Console.WriteLine($"количество значений больше 0 = {sum}");
+ 
+Console.WriteLine($"Кол-во элементов > 0: {count}");
