@@ -1,12 +1,13 @@
 ﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
-Console.WriteLine("введите количество строк");
-int linesVol = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите количество столбцов");
-int columnsVol = Convert.ToInt32(Console.ReadLine());
-double[,] num = new double[linesVol, columnsVol];
-FillArrayRndNum(num);
-PrintArray(num);
+// Console.WriteLine("введите количество строк");
+// int linesVol = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите количество столбцов");
+// int columnsVol = Convert.ToInt32(Console.ReadLine());
+// double[,] num = new double[linesVol, columnsVol];
+// FillArrayRndNum(num);
+// PrintArray(num);
+
 
 void FillArrayRndNum(double[,] array)
 {
