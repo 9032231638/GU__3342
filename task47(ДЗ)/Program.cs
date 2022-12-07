@@ -21,12 +21,12 @@ void FillArrayRndNum(double[,] array)
 
 void PrintArray(double[,] array)
 {
- for (int i = 0; i < array.GetLength(0); i++)
+ for (int m = 0; m < array.GetLength(0); m++)
     {
       Console.Write("[ ");
-      for (int j = 0; j < array.GetLength(1); j++)
+      for (int n = 0; n < array.GetLength(1); n++)
         {
-          Console.Write(array[i, j] + " ");
+          Console.Write(array[m, n] + " ");
         }
       Console.Write("]");
       Console.WriteLine("");
