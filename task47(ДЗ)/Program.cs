@@ -10,11 +10,11 @@ PrintArray(num);
 
 void FillArrayRndNum(double[,] array)
 {
- for (int i = 0; i < array.GetLength(0); i++)
+ for (int m = 0; m < array.GetLength(0); m++)
     {
-     for (int j = 0; j < array.GetLength(1); j++)
+     for (int n = 0; n < array.GetLength(1); n++)
         {
-          array[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+          array[m, n] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
         }
     }
 }
