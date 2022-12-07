@@ -2,14 +2,14 @@
 // и возвращает значение этого элемента или же указание, что такого элемента нет
 
 Console.WriteLine("Введите номер строки");
-int n = ConvertToInt32(COnsole.ReadLine());
+int n = ConvertToInt32(Console.ReadLine());
 Console.WriteLine("Введите номер столбца");
 int m = ConvertToInt32(Console.ReadLine());
 int [,] num = new int [10/10];
 FillArrayRndNum(num);
 
 
-if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
+if (n > num.GetLength(0) || m > num.GetLength(1))
 {
     Console.WriteLine("такого элемента нет");
 }
@@ -18,9 +18,9 @@ else
     Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {numbers[n-1,m-1]}");
 }
 
-PrintArray(numbers);
+PrintArray(num);
 
-void FillArrayRandomNumbers(int[,] array)
+void FillArrayRndNum(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
         {        
